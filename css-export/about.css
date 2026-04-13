@@ -1,0 +1,150 @@
+/* ========================================
+   TRADEFYY - ABOUT SECTION
+   ======================================== */
+
+.about-section {
+  position: relative;
+  padding: 5rem 1.5rem;
+  background-color: rgba(28, 28, 30, 0.2);
+}
+
+.about-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* Left Column - About Content */
+.about-content {
+  /* No additional styles needed */
+}
+
+.about-title {
+  margin-bottom: 1.5rem;
+  color: var(--color-foreground);
+  text-wrap: balance;
+}
+
+.about-title-highlight {
+  display: block;
+  background: linear-gradient(
+    to right,
+    var(--color-primary),
+    hsl(270, 91%, 75%),
+    var(--color-primary)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-paragraph {
+  color: var(--color-muted-foreground);
+  line-height: 1.7;
+}
+
+.about-footer {
+  font-size: var(--text-sm);
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+}
+
+/* Right Column - Core Principles */
+.principles-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.principles-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: var(--color-foreground);
+}
+
+.principle-card {
+  background-color: rgba(28, 28, 30, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-normal);
+}
+
+.principle-card:hover {
+  background-color: rgba(28, 28, 30, 0.6);
+}
+
+.principle-content {
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+}
+
+.principle-icon {
+  padding: 0.75rem;
+  background-color: rgba(168, 85, 247, 0.1);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+.principle-icon svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: var(--color-primary);
+}
+
+.principle-text {
+  flex: 1;
+}
+
+.principle-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--color-foreground);
+}
+
+.principle-description {
+  font-size: var(--text-sm);
+  color: var(--color-muted-foreground);
+  line-height: 1.7;
+}
+
+/* ========================================
+   RESPONSIVE - TABLET & DESKTOP
+   ======================================== */
+
+@media (min-width: 768px) {
+  .about-section {
+    padding: 8rem 3rem;
+  }
+
+  .principles-title {
+    font-size: 1.875rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-section {
+    padding: 8rem 5rem;
+  }
+
+  .about-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

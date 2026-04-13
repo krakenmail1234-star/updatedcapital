@@ -1,0 +1,128 @@
+/* ========================================
+   TRADEFYY - TECHNOLOGY SECTION
+   ======================================== */
+
+.technology-section {
+  position: relative;
+  padding: 5rem 1.5rem;
+  background-color: var(--color-background);
+}
+
+.technology-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Section Header */
+.technology-header {
+  max-width: 48rem;
+  margin-bottom: 4rem;
+}
+
+.technology-badge {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.technology-badge-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--text-sm);
+  color: var(--color-muted-foreground);
+}
+
+.technology-badge-line {
+  height: 1px;
+  width: 2rem;
+  background-color: var(--color-primary);
+}
+
+.technology-badge-text {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.technology-title {
+  margin-bottom: 1.5rem;
+  color: var(--color-foreground);
+  text-wrap: balance;
+}
+
+.technology-description {
+  font-size: 1.125rem;
+  color: var(--color-muted-foreground);
+  line-height: 1.7;
+}
+
+/* Technology Grid */
+.technology-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.technology-card {
+  background-color: rgba(28, 28, 30, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2.5rem;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-normal);
+}
+
+.technology-card:hover {
+  background-color: rgba(28, 28, 30, 0.6);
+  border-color: rgba(168, 85, 247, 0.3);
+}
+
+.technology-icon {
+  display: inline-flex;
+  padding: 1rem;
+  background-color: rgba(168, 85, 247, 0.1);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: var(--radius-md);
+  margin-bottom: 1.5rem;
+}
+
+.technology-icon svg {
+  height: 2rem;
+  width: 2rem;
+  color: var(--color-primary);
+}
+
+.technology-card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--color-foreground);
+}
+
+.technology-card-description {
+  color: var(--color-muted-foreground);
+  line-height: 1.7;
+}
+
+/* ========================================
+   RESPONSIVE - TABLET
+   ======================================== */
+
+@media (min-width: 768px) {
+  .technology-section {
+    padding: 8rem 3rem;
+  }
+
+  .technology-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ========================================
+   RESPONSIVE - DESKTOP
+   ======================================== */
+
+@media (min-width: 1024px) {
+  .technology-section {
+    padding: 8rem 5rem;
+  }
+}

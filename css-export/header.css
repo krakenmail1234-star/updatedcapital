@@ -1,0 +1,216 @@
+/* ========================================
+   TRADEFYY - HEADER STYLES
+   ======================================== */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-fixed);
+  transition: all var(--transition-normal);
+}
+
+.header.scrolled {
+  background-color: rgba(18, 18, 20, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 1.5rem;
+}
+
+/* Logo Section */
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.header-logo-image {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.header-logo-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+/* Navigation Links */
+.header-nav-links {
+  display: none;
+  gap: 2rem;
+}
+
+.header-nav-link {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-muted-foreground);
+  transition: color var(--transition-normal);
+}
+
+.header-nav-link:hover {
+  color: var(--color-foreground);
+}
+
+/* Header Actions */
+.header-actions {
+  display: none;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+/* Mobile Menu Button */
+.mobile-menu-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem;
+  color: var(--color-foreground);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu-button svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  border-top: 1px solid var(--color-border);
+  background-color: rgba(18, 18, 20, 0.95);
+  backdrop-filter: blur(12px);
+}
+
+.mobile-menu-content {
+  padding: 1.5rem;
+}
+
+.mobile-menu-links {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.mobile-menu-link {
+  display: block;
+  padding: 0.75rem 0;
+  font-size: var(--text-base);
+  font-weight: 500;
+  color: var(--color-muted-foreground);
+  transition: color var(--transition-normal);
+}
+
+.mobile-menu-link:hover {
+  color: var(--color-foreground);
+}
+
+.mobile-menu-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-top: 1rem;
+}
+
+/* Language Switcher in Header */
+.header .language-switcher {
+  background-color: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-foreground);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.header .language-switcher:hover {
+  background-color: var(--color-card);
+  border-color: var(--color-primary);
+}
+
+/* Button Styles in Header */
+.header-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-normal);
+  border: 1px solid var(--color-border);
+  background-color: transparent;
+  color: var(--color-foreground);
+  cursor: pointer;
+}
+
+.header-button:hover {
+  background-color: var(--color-card);
+  border-color: var(--color-primary);
+}
+
+.header-button.primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-primary-foreground);
+}
+
+.header-button.primary:hover {
+  opacity: 0.9;
+}
+
+/* ========================================
+   RESPONSIVE - DESKTOP
+   ======================================== */
+
+@media (min-width: 768px) {
+  .header-nav {
+    padding: 1.5rem 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-nav {
+    padding: 1.5rem 5rem;
+  }
+
+  .header-nav-links {
+    display: flex;
+  }
+
+  .header-actions {
+    display: flex;
+  }
+
+  .mobile-menu-button {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+}
+
+/* Screen Reader Only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

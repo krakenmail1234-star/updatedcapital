@@ -1,0 +1,367 @@
+/* ========================================
+   TRADEFYY - ICON STYLES
+   ======================================== */
+
+/* ========================================
+   BASE ICON STYLES
+   ======================================== */
+
+.icon {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+/* Icon Sizes */
+.icon-xs {
+  width: 1rem;
+  height: 1rem;
+}
+
+.icon-sm {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.icon-md {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.icon-lg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon-xl {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.icon-2xl {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* ========================================
+   ICON CONTAINERS
+   ======================================== */
+
+.icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Icon Container Sizes */
+.icon-container-sm {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+}
+
+.icon-container-md {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.625rem;
+}
+
+.icon-container-lg {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.75rem;
+}
+
+.icon-container-xl {
+  width: 4rem;
+  height: 4rem;
+  padding: 1rem;
+}
+
+/* Icon Container Styles */
+.icon-container-primary {
+  background-color: rgba(168, 85, 247, 0.1);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  color: var(--color-primary);
+}
+
+.icon-container-muted {
+  background-color: var(--color-muted);
+  border: 1px solid var(--color-border);
+  color: var(--color-muted-foreground);
+}
+
+.icon-container-card {
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+  color: var(--color-foreground);
+}
+
+/* Icon Container Shapes */
+.icon-container-square {
+  border-radius: var(--radius-sm);
+}
+
+.icon-container-rounded {
+  border-radius: var(--radius-md);
+}
+
+.icon-container-circle {
+  border-radius: 50%;
+}
+
+/* ========================================
+   ICON BUTTON STYLES
+   ======================================== */
+
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  background-color: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-foreground);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.icon-button:hover {
+  background-color: var(--color-card);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.icon-button:active {
+  transform: translateY(0);
+}
+
+.icon-button.primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-primary-foreground);
+}
+
+.icon-button.primary:hover {
+  opacity: 0.9;
+}
+
+/* ========================================
+   SOCIAL MEDIA ICONS
+   ======================================== */
+
+.social-icon-list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-foreground);
+  transition: all var(--transition-normal);
+}
+
+.social-icon-link:hover {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.social-icon-link svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Specific Social Media Colors (Optional) */
+.social-icon-facebook:hover {
+  background-color: #1877f2;
+  border-color: #1877f2;
+}
+
+.social-icon-twitter:hover {
+  background-color: #1da1f2;
+  border-color: #1da1f2;
+}
+
+.social-icon-linkedin:hover {
+  background-color: #0a66c2;
+  border-color: #0a66c2;
+}
+
+.social-icon-instagram:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  border-color: #e1306c;
+}
+
+.social-icon-youtube:hover {
+  background-color: #ff0000;
+  border-color: #ff0000;
+}
+
+/* ========================================
+   ICON WITH TEXT
+   ======================================== */
+
+.icon-with-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.icon-with-text svg {
+  flex-shrink: 0;
+}
+
+/* ========================================
+   FEATURE ICONS (Check marks, etc.)
+   ======================================== */
+
+.feature-icon {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background-color: rgba(168, 85, 247, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-icon svg {
+  width: 0.75rem;
+  height: 0.75rem;
+  color: var(--color-primary);
+}
+
+/* ========================================
+   ANIMATED ICONS
+   ======================================== */
+
+.icon-animated {
+  transition: transform var(--transition-normal);
+}
+
+.icon-animated:hover {
+  transform: scale(1.1);
+}
+
+.icon-spin {
+  animation: spin 2s linear infinite;
+}
+
+.icon-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.icon-bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ========================================
+   ICON COLORS
+   ======================================== */
+
+.icon-primary {
+  color: var(--color-primary);
+}
+
+.icon-foreground {
+  color: var(--color-foreground);
+}
+
+.icon-muted {
+  color: var(--color-muted-foreground);
+}
+
+.icon-success {
+  color: #10b981;
+}
+
+.icon-warning {
+  color: #f59e0b;
+}
+
+.icon-error {
+  color: var(--color-destructive);
+}
+
+/* ========================================
+   LUCIDE ICONS SPECIFIC STYLES
+   ======================================== */
+
+/* If you're using Lucide React icons, these classes help style them */
+
+.lucide {
+  display: inline-block;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+/* ========================================
+   ICON USAGE EXAMPLES
+   ======================================== */
+
+/*
+Example HTML structures:
+
+<!-- Basic Icon -->
+<svg class="icon icon-primary">...</svg>
+
+<!-- Icon in Container -->
+<div class="icon-container-lg icon-container-primary icon-container-circle">
+  <svg class="icon">...</svg>
+</div>
+
+<!-- Icon Button -->
+<button class="icon-button primary">
+  <svg class="icon">...</svg>
+</button>
+
+<!-- Icon with Text -->
+<div class="icon-with-text">
+  <svg class="icon icon-primary">...</svg>
+  <span>Some Text</span>
+</div>
+
+<!-- Social Media Icons -->
+<div class="social-icon-list">
+  <a href="#" class="social-icon-link social-icon-facebook">
+    <svg class="icon">...</svg>
+  </a>
+</div>
+
+<!-- Feature Icon (Checkmark) -->
+<div class="feature-icon">
+  <svg class="icon">...</svg>
+</div>
+*/

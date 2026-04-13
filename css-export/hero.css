@@ -1,0 +1,282 @@
+/* ========================================
+   TRADEFYY - HERO SECTION STYLES
+   ======================================== */
+
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Background Elements */
+.hero-background-grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.2;
+}
+
+.hero-gradient-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    var(--color-background),
+    rgba(18, 18, 20, 0.95),
+    var(--color-background)
+  );
+}
+
+/* Purple Gradient Circles */
+.hero-gradient-circle-1 {
+  position: absolute;
+  top: 25%;
+  right: 25%;
+  width: 24rem;
+  height: 24rem;
+  background: linear-gradient(
+    to bottom right,
+    var(--color-primary),
+    hsl(270, 91%, 55%),
+    transparent
+  );
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.3;
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.hero-gradient-circle-2 {
+  position: absolute;
+  bottom: 25%;
+  left: 25%;
+  width: 16rem;
+  height: 16rem;
+  background: linear-gradient(
+    to top right,
+    hsl(270, 91%, 55%),
+    transparent
+  );
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.2;
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Hero Content Container */
+.hero-content {
+  position: relative;
+  padding: 5rem 1.5rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.hero-content-inner {
+  max-width: 56rem;
+  position: relative;
+}
+
+/* Logo positioned top right */
+.hero-logo {
+  position: absolute;
+  top: -2rem;
+  right: 0;
+  display: none;
+}
+
+.hero-logo-image {
+  height: 6rem;
+  width: auto;
+  opacity: 0.8;
+  transition: opacity var(--transition-normal);
+}
+
+.hero-logo-image:hover {
+  opacity: 1;
+}
+
+/* Main Headline */
+.hero-headline {
+  margin-bottom: 2rem;
+  color: var(--color-foreground);
+  animation: slideUp 0.6s ease-out forwards;
+  text-wrap: balance;
+}
+
+.hero-headline-highlight {
+  display: block;
+  margin-top: 0.5rem;
+  background: linear-gradient(
+    to right,
+    var(--color-primary),
+    hsl(270, 91%, 75%),
+    var(--color-primary)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Value Proposition */
+.hero-description {
+  font-size: 1.25rem;
+  color: var(--color-muted-foreground);
+  margin-bottom: 3rem;
+  max-width: 42rem;
+  line-height: 1.7;
+  animation: slideUp 0.6s ease-out forwards;
+  animation-delay: 200ms;
+  opacity: 0;
+}
+
+/* Key Pillars Grid */
+.hero-pillars {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  animation: slideUp 0.6s ease-out forwards;
+  animation-delay: 400ms;
+  opacity: 0;
+}
+
+.hero-pillar-card {
+  background-color: rgba(28, 28, 30, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  border-left: 2px solid rgba(168, 85, 247, 0.5);
+  transition: all var(--transition-normal);
+}
+
+.hero-pillar-card:hover {
+  background-color: rgba(28, 28, 30, 0.6);
+}
+
+.hero-pillar-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-foreground);
+}
+
+.hero-pillar-description {
+  font-size: var(--text-sm);
+  color: var(--color-muted-foreground);
+}
+
+/* CTA Buttons */
+.hero-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  animation: slideUp 0.6s ease-out forwards;
+  animation-delay: 600ms;
+  opacity: 0;
+}
+
+.hero-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-normal);
+  cursor: pointer;
+  border: none;
+}
+
+.hero-cta-button.primary {
+  background-color: var(--color-primary);
+  color: var(--color-primary-foreground);
+}
+
+.hero-cta-button.primary:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.hero-cta-button.outline {
+  background-color: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-foreground);
+}
+
+.hero-cta-button.outline:hover {
+  background-color: var(--color-card);
+  border-color: var(--color-primary);
+}
+
+.hero-cta-button svg {
+  margin-left: 0.5rem;
+  height: 1rem;
+  width: 1rem;
+  transition: transform var(--transition-normal);
+}
+
+.hero-cta-button:hover svg {
+  transform: translateX(0.25rem);
+}
+
+/* Scroll Indicator */
+.hero-scroll-indicator {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 1s infinite;
+}
+
+.hero-scroll-line {
+  width: 1px;
+  height: 4rem;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--color-primary),
+    transparent
+  );
+}
+
+/* ========================================
+   RESPONSIVE - TABLET
+   ======================================== */
+
+@media (min-width: 768px) {
+  .hero-content {
+    padding: 8rem 3rem;
+  }
+
+  .hero-description {
+    font-size: 1.5rem;
+  }
+
+  .hero-pillars {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero-cta {
+    flex-direction: row;
+  }
+}
+
+/* ========================================
+   RESPONSIVE - DESKTOP
+   ======================================== */
+
+@media (min-width: 1024px) {
+  .hero-content {
+    padding: 8rem 5rem;
+  }
+
+  .hero-logo {
+    display: block;
+  }
+}
+
+/* Animation keyframes already defined in variables.css */

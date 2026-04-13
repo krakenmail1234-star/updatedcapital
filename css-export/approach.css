@@ -1,0 +1,190 @@
+/* ========================================
+   TRADEFYY - INVESTMENT APPROACH SECTION
+   ======================================== */
+
+.approach-section {
+  position: relative;
+  padding: 5rem 1.5rem;
+  background-color: rgba(28, 28, 30, 0.2);
+}
+
+.approach-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Section Header */
+.approach-header {
+  max-width: 48rem;
+  margin-bottom: 4rem;
+}
+
+.approach-badge {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.approach-badge-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--text-sm);
+  color: var(--color-muted-foreground);
+}
+
+.approach-badge-line {
+  height: 1px;
+  width: 2rem;
+  background-color: var(--color-primary);
+}
+
+.approach-badge-text {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.approach-title {
+  margin-bottom: 1.5rem;
+  color: var(--color-foreground);
+  text-wrap: balance;
+}
+
+.approach-description {
+  font-size: 1.125rem;
+  color: var(--color-muted-foreground);
+  line-height: 1.7;
+}
+
+/* Framework Grid */
+.framework-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.framework-item {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.framework-number {
+  font-size: 3.75rem;
+  font-weight: 700;
+  color: rgba(168, 85, 247, 0.2);
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.framework-content {
+  flex: 1;
+}
+
+.framework-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--color-foreground);
+}
+
+.framework-description {
+  color: var(--color-muted-foreground);
+  line-height: 1.7;
+}
+
+/* Performance Metrics Card */
+.metrics-card {
+  background-color: rgba(28, 28, 30, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 3rem;
+  border-radius: var(--radius-sm);
+}
+
+.metrics-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.metrics-icon svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: var(--color-primary);
+}
+
+.metrics-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-foreground);
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.metric-item {
+  text-align: center;
+}
+
+.metric-value {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.metric-label {
+  font-size: var(--text-sm);
+  color: var(--color-muted-foreground);
+}
+
+.metrics-disclaimer {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.disclaimer-text {
+  font-size: var(--text-xs);
+  color: var(--color-muted-foreground);
+}
+
+/* ========================================
+   RESPONSIVE - TABLET
+   ======================================== */
+
+@media (min-width: 768px) {
+  .approach-section {
+    padding: 8rem 3rem;
+  }
+
+  .framework-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .metric-item {
+    text-align: left;
+  }
+}
+
+/* ========================================
+   RESPONSIVE - DESKTOP
+   ======================================== */
+
+@media (min-width: 1024px) {
+  .approach-section {
+    padding: 8rem 5rem;
+  }
+
+  .metrics-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

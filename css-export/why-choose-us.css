@@ -1,0 +1,227 @@
+/* ========================================
+   TRADEFYY - WHY CHOOSE US SECTION
+   ======================================== */
+
+.why-choose-section {
+  position: relative;
+  padding: 5rem 1.5rem;
+  background-color: var(--color-background);
+}
+
+.why-choose-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Section Header */
+.why-choose-header {
+  text-align: center;
+  max-width: 48rem;
+  margin: 0 auto 4rem;
+}
+
+.why-choose-badge {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.why-choose-badge-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--text-sm);
+  color: var(--color-muted-foreground);
+  justify-content: center;
+}
+
+.why-choose-badge-line {
+  height: 1px;
+  width: 2rem;
+  background-color: var(--color-primary);
+}
+
+.why-choose-badge-text {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.why-choose-title {
+  margin-bottom: 1.5rem;
+  color: var(--color-foreground);
+}
+
+.why-choose-title-highlight {
+  display: block;
+  background: linear-gradient(
+    to right,
+    var(--color-primary),
+    hsl(270, 91%, 75%),
+    var(--color-primary)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.why-choose-description {
+  font-size: 1.125rem;
+  color: var(--color-muted-foreground);
+  line-height: 1.7;
+}
+
+/* Performance Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.stat-card {
+  background-color: rgba(28, 28, 30, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: var(--radius-sm);
+  text-align: center;
+  transition: all var(--transition-normal);
+}
+
+.stat-card:hover {
+  background-color: rgba(28, 28, 30, 0.6);
+}
+
+.stat-card.highlight {
+  border: 2px solid rgba(168, 85, 247, 0.5);
+  background-color: rgba(168, 85, 247, 0.05);
+}
+
+.stat-icon {
+  display: inline-flex;
+  padding: 1rem;
+  background-color: rgba(168, 85, 247, 0.1);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.stat-icon svg {
+  height: 2rem;
+  width: 2rem;
+  color: var(--color-primary);
+}
+
+.stat-value {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-foreground);
+  margin-bottom: 0.5rem;
+}
+
+.stat-description {
+  font-size: var(--text-xs);
+  color: var(--color-muted-foreground);
+  line-height: 1.7;
+}
+
+/* Advantages Grid */
+.advantages-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.advantage-item {
+  display: flex;
+  gap: 1rem;
+}
+
+.advantage-number {
+  flex-shrink: 0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: var(--radius-sm);
+  background-color: rgba(168, 85, 247, 0.1);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advantage-number-text {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.advantage-content {
+  flex: 1;
+}
+
+.advantage-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--color-foreground);
+}
+
+.advantage-description {
+  color: var(--color-muted-foreground);
+  line-height: 1.7;
+}
+
+/* Disclaimer */
+.disclaimer-card {
+  margin-top: 3rem;
+  background-color: rgba(28, 28, 30, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.disclaimer-text {
+  font-size: var(--text-xs);
+  color: var(--color-muted-foreground);
+  text-align: center;
+  line-height: 1.7;
+}
+
+/* ========================================
+   RESPONSIVE - TABLET
+   ======================================== */
+
+@media (min-width: 768px) {
+  .why-choose-section {
+    padding: 8rem 3rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .advantages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ========================================
+   RESPONSIVE - DESKTOP
+   ======================================== */
+
+@media (min-width: 1024px) {
+  .why-choose-section {
+    padding: 8rem 5rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
